@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <title>My Favorite Things</title>
+
+    <!-- The viewport is the visible area of a page. Pages may be wider
+    than the screen or browser window; and pages are often longer than
+    the browser window. This tag sets the width of the page equal to the
+    width of the browser window. The height stays the same. -->
+    <meta name="viewport" content="width=device-width initial-scale=1">
+
+
+    <!-- Include Bootstrap. This downloads Bootstrap from a CDN. You can
+     also host Bootstrap on your server, but it's usually faster for the
+     user for their browser to fetch it from a CDN. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Nav components, and dropdowns, need Bootstrap's JavaScript to do anything.
+    And JavaScript requires JQuery, so include that too -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+
+<body>
+
+<div class="container">
+
+    <div class="row">
+      <div class="jumbotron" id="jumbotron">
+        <br />
+        <br />
+        <h1>Some of my favorite things</h1>
+      </div>
+    </div>
+
+  <div class="row" id="pill-container">
+
+    <ul class="nav nav-pills">
+      <li role="presentation" class="active"><a href="#movie" aria-controls="favorite-movie" role="tab" data-toggle="tab">Movie</a></li>
+      <li role="presentation"><a href="#artist"  aria-controls="favorite-artist" role="tab" data-toggle="tab">Artist</a></li>
+      <li role="presentation"><a href="#food"  aria-controls="favorite-foods" role="tab" data-toggle="tab">Food</a></li>
+      <li role="presentation"><a href="#books"  aria-controls="favorite-books" role="tab" data-toggle="tab">Books</a></li>
+      <li role="presentation"><a href="#program"  aria-controls="favorite-program" role="tab" data-toggle="tab">Program</a></li>
+      <li role="presentation"><a href="#images"  aria-controls="favorite-images" role="tab" data-toggle="tab">Images</a></li>
+    </ul>
+
+  <!-- The tab panes for each pill. Bootstrap's JavaScript uses the attributes of the
+  li elements to display the correct tab panel when a pill is clicked.  -->
+
+  <div class="tab-content">
+
+    <!-- favorite movie-->
+    <div role="tabpanel" class="tab-pane active" id="movie">
+      <div class="favorite-section">
+        <h2 class="section-header">Favorite Movie</h2>
+        <p>
+          One of my favorite movies is <span id="favorite-movie"><i>Interstellar</i></span>.
+          This is one of the only movies that I have watched multiple times and could still watch it again.
+          <a href="http://www.imdb.com/title/tt0816692/">Here is the IMBD for Interstellar</a>
+        </p>
+      </div>
+    </div>
+
+    <!--favorite artist-->
+    <div role="tabpanel" class="tab-pane" id="artist">
+      <div class="favorite-section">
+        <h2 class="section-header">Favorite Artist</h2>
+        <p>
+          One of my favorite artists is <span id="favorite-artist"><b>Rihanna</b></span>.
+          <br>
+          I have been a fan of her music since her song Pon De Replay came out in 2005.
+          Some of my favorite Rihanna songs are "Work" and "Betta Have My Money".
+          <br>
+          <a href="https://www.youtube.com/user/rihanna">Rihanna's youtube channel</a>
+        </p>
+      </div>
+    </div>
+
+    <!--favorite food-->
+    <div role="tabpanel" class="tab-pane" id="food">
+      <div class="favorite-section">
+        <h2 class="section-header">Favorite Foods</h2>
+        <ul id="favorite-foods">
+          <li id="most-favorite-food">Pizza<span class="glyphicon glyphicon-heart"></span></li>
+          <li>Roasted Garlic Hummus</li>
+          <li>Pistachios</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--favorite books-->
+    <div role="tabpanel" class="tab-pane" id="books">
+      <div class="favorite-section">
+        <h2 class="section-header">My Favorite Books</h2>
+        <table id="favorite-books">
+          <tr><th>Book Name</th><th>Author</th><th>Book Website</th></tr>
+          <tr><td>Beautiful Disaster</td><td>Jamie McGuire</td><td><a href="https://www.jamiemcguire.com/beautiful-disaster/">Purchase here</a></td></tr>
+          <tr><td>Milk and Honey</td><td>Rupi Kaur</td><td><a href="https://rupikaur.com/shop/">Purchase here</a></td></tr>
+        </table>
+      </div>
+    </div>
+
+    <!--favorite program-->
+    <div role="tabpanel" class="tab-pane" id="program">
+      <div class="favorite-section">
+        <h2 class="section-header" id="favorite-program">My Favorite Program</h2>
+        <a href="http://localhost:63342/Week%202/favoriteProgram.html?_ijt=m20393fbdgefjkpe30u85d4e71">Click here to view page about program.</a>
+      </div>
+    </div>
+
+    <!--favorite images-->
+    <div role="tabpanel" class="tab-pane" id="images">
+      <div class="favorite-section">
+        <h2 class="section-header" id="favorite-images">Some Favorite Images</h2>
+        <img class="favorite-image" src="pink flower.jfif" height="400" width="550">
+        <img class="favorite-image" src="flowers.jfif" height="400" width="550">
+      </div>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</body>
+
+</html>

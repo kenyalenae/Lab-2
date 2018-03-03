@@ -1,0 +1,70 @@
+#jumbotron {
+    color: #DE8FAB;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+p {
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+body {
+    background-color: #DE8FAB;
+}
+
+img {
+    border: 6px #42565D double;
+    margin-left: 30px;
+}
+
+.favorite-section{
+    border: 1px black solid;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#favorite-movie {
+    background-color: lightpink;
+}
+
+#favorite-artist {
+    background-color: lightpink;
+}
+
+th,td {
+    border: 1px black solid;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+th {
+    color: black;
+}
+
+td {
+    color: white;
+}
+
+.section-header {
+    background-color: lightpink;
+}
+
+#most-favorite-food {
+    font-size: 17px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.favorite-image {
+    border-radius: 15px;
+}
